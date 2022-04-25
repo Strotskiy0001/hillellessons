@@ -1,13 +1,13 @@
-const arr = [1, 2, 3, 4, 5, 6, 7];
-let result = 0;
+const textE = document.getElementById("text");
+const btnE = document.querySelector("#btn");
+const ulContainerE = document.getElementById("list");
+const inptTextE = document.getElementById("inpt");
 
-function rec(array, index) {
-  if (array[index]) {
-    result += array[index];
-    rec(arr, --index);
-  }
-  return result;
+btnE.addEventListener("click", onClick);
+
+function onClick() {
+  const liE = document.createElement("li");
+  liE.textContent = inptTextE.value;
+  ulContainerE.append(liE);
+  inptTextE.value = "";
 }
-
-rec(arr, 4);
-console.log(result);
