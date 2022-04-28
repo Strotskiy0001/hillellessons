@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css"></link>
+    <title>Document</title>
 <body>
-    <input type="text" id="inpt" placeholder="Type some text">
-    <button id="btn"> Click </button>
-    <ul class="ul_list" id="list">
-    </ul>
+    <div class="controlpanel">
+        <input type="text" id="first-name" placeholder="Name">
+        <input type="text" id="second-name"placeholder="Last Name">
+        <input type="text" id="phone" placeholder="Number">
+        <button id="btn">Add new contact</button>
+    </div>
+    <ul class="container"></ul>
+
+    <script id="template" type="text/template">
+       <li class="item-list">
+        <div>{{name}}</div>
+        <div>{{last}}</div>
+        <div>{{phone}}</div>
+       </li>
+    </script>
 </body>
 </html>
