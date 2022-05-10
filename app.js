@@ -20,6 +20,14 @@ function onClick() {
 }
 
 function validTodo(e) {
+  if (e.keyCode == 8 && e.shiftKey) {
+    inpE.value = "";
+  }
+  // console.log(e);
+  if (!inpE.value) {
+    return;
+  }
+
   if (!e.target.value.trim()) {
     error.innerText = "";
     btnE.disabled = true;
