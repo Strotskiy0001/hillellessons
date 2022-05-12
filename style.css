@@ -1,0 +1,47 @@
+/* 
+.container {
+    display: flex;
+    flex-wrap:wrap;
+    width: 60%;
+    border: 1px solid red;
+    gap:25px;
+}
+
+
+.header {
+    background-color: grey;
+}
+
+.close-todo {
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+}
+
+.item-list {
+    position: relative;
+    background-color: yellow;
+    width: 45%;
+    height: 50px;
+    border: 1px solid aqua;
+}
+
+.finish {
+    background-color: green;
+}
+
+.error-cont {
+    color:red;
+    font-size: 10px;
+}
+
+.inp-cont {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+.div_head {
+    display: flex;
+} */
