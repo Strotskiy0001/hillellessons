@@ -1,0 +1,25 @@
+.title {
+font-weight: bold;
+font-size:24px;
+cursor: pointer;
+padding: 4px 15px;
+}
+
+.title-active {
+background-color: lightgreen;
+border-bottom: 3px solid darkorange;
+
+}
+
+.body {
+    width: 100%;
+    display: none;
+}
+
+.title-container{
+    display: flex;
+}
+
+.show {
+    display: block;
+}
