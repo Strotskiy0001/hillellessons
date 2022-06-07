@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>HW16</title>
+    <script src="./http/http.js" defer></script>
+    <script src="./todo/todo.js" defer></script>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>HW17</title>
 </head>
 <body>
-<div id="img-div">
-    <button id="btn">Search</button>
-    <input type="text" id="input">
-</div>
-<div id="avatar"></div>
-<div id="followers"></div>
-<div id="following"></div>
+    <div class="header">
+        <input type="text" class="title">
+        <input type="text" class="body">
+        <button class="create">ADD TODO</button>
+    </div>
+    <div class="content">
+        <div class="list">
+            <!-- <div class="item">
+                <div class="item-content">
+                    <div>
+                        <div class="item-title"></div>
+                        <div class="item-body"></div>
+                    </div>
+                    <div>time</div>
+                </div>
+                <div class="item-actions">
+                    <div class="close">x</div>
+                    <button class="complete">Finish</button>
+                </div>
+            </div> -->
+        </div>
+        <div style="width:40%" class="edit-container">
+        <h1 style="text-align: center">Edit Todo</h1>
+        <div class="edit">
+            <input type="text" class="edit-title">
+            <input type="text" class="edit-body">
+            <button class="save">Save Todo</button>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
