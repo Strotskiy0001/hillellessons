@@ -1,0 +1,27 @@
+.list-container {
+    width: 40%;
+    margin: 10px 0;
+}
+
+.full-todo {
+    display: flex;
+    width: 50%;
+    background-color: lightcoral;
+    padding: 10px 110px;
+    border: 1px solid red;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons {
+    width: 150px;
+}
+
+.buttons-delete {
+    width: 150px;
+}
+
+.completed {
+    background-color: lightgreen;
+}
