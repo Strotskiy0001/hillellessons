@@ -29,3 +29,10 @@ code {
 .item-notes {
   display: flex;
 }
+
+.deleted {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightcoral;
+  padding: 5px
+}

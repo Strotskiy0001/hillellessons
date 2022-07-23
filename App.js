@@ -1,15 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import NotesForm from "./components/form";
 import NotesList from "./components/list";
+import api from "./api";
 function App() {
   const initialState = {
     notes: [],
+    newNote: null,
+    currentNote: null,
   };
+
+  useEffect(() => {
+    if (!state.newNote) {
+      api.get().then((r) => setstate({ notes: r.data }));
+    } else {
+      api.post(state.newNote).then((r) =>
+        setstate(...state, {
+          notes: [...state.notes, r.data],
+          newNote: null,
+        })
+      );
+    }
+  }, []);
+
   const [state, setstate] = useState(initialState);
 
-  const onNewTodoCreate = (todo) => {
-    setstate({ notes: [...state.notes, todo] });
+  const onNewTodoCreate = (note) => {
+    setstate({ ...state, newNote: note });
   };
 
   const onChangeNotes = (id, text) => {
